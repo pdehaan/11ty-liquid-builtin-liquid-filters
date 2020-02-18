@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ title | striptags | safe }}</title>
+  <style>
+    body {
+      font-family: serif;
+    }
+    h1, h2, h3 {
+      font-family: sans-serif;
+    }
+    dt {
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+    dl {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 2rem;
+    }
+    footer {
+      border-top: 1px solid #ddd;
+      text-align: center;
+    }
+
+    pre {
+      background-color: #eee;
+      padding: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">{{ content | safe }}</div>
+
+</body>
+</html>

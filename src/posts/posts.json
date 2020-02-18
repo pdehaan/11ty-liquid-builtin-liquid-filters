@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/post.liquid",
+  "tags": ["filter"]
+}

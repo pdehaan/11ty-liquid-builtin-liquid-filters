@@ -1,0 +1,34 @@
+---
+layout: layouts/default.liquid
+---
+
+{% comment %}
+<nav>{% include nav.liquid %}</nav>
+{% endcomment %}
+
+<header>
+  <h1>{{ title }}</h1>
+</header>
+
+<main id="main">
+  {{ content | trim | safe }}
+</main>
+
+{% if related %}
+<aside>
+  <h3>See also</h3>
+  <ul>
+    {% for r in related %}
+    <li><a href="/posts/{{ r }}/">{{ r }}</a></li>
+    {%- endfor %}
+  </ul>
+</aside>
+{% endif %}
+
+<aside>
+  {% include category_posts.liquid %}
+</aside>
+
+<footer>
+  <p>liquidjs v{{ libraries.liquidjs }} &middot; eleventy v{{ libraries.eleventy }}</p>
+</footer>

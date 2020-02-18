@@ -1,0 +1,26 @@
+{
+  "name": "11ty-liquid-builtin-liquid-filters",
+  "version": "1.0.0",
+  "description": "Liquidjs built-in filters.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "npm run build && npx prettier 'www/**/*.html' --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-liquid-builtin-liquid-filters.git"
+  },
+  "keywords": [],
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-liquid-builtin-liquid-filters/issues"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-liquid-builtin-liquid-filters#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "liquidjs": "^9.7.0"
+  }
+}

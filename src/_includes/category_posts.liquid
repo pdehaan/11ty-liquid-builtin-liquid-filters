@@ -1,0 +1,12 @@
+{% assign related_pages = collections[category] %}
+
+{% if related_pages | size > 1 %}
+  <h3>Related <q>{{ category }}</q> filters</h3>
+  <ul>
+    {% for p in related_pages %}
+    {% if p.url != page.url %}
+    <li><a href="{{ p.url }}">{{ p.data.name }}</a> &mdash; {{ p.data.description }}</li>
+    {% endif %}
+    {%- endfor %}
+  </ul>
+{% endif %}
